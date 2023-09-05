@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "json-server-2",
+      "author": "typicode-2"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "Products": [
+    {
+      "Device": "Dell",
+      "Price": "20000",
+      "id": 1
+    },
+    {
+      "Device": "HP",
+      "Price": "30000",
+      "id": 2
+    },
+    {
+      "Device": "Lenovo",
+      "Price": "40000",
+      "id": 3
+    },
+    {
+      "Device": "Acer",
+      "Price": "20000",
+      "id": 4
+    },
+    {
+      "Device": "Samsung",
+      "Price": "300000",
+      "id": 5
+    },
+    {
+      "Device": "Oppo",
+      "Price": "70000",
+      "id": 6
+    }
+  ]
+}
