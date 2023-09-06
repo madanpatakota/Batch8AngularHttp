@@ -34,7 +34,16 @@ export class AppComponent implements OnInit {
     //     console.log('MY project having the data from Firstamdeud', data);
     //   });
 
-    this.httpClient.get('http://localhost:3000/Products').subscribe((data) => {
+    this.httpClient.get('http://localhost:3000/Products' , {
+          headers :{
+            CompanyName : 'Misard',
+            Information : 'Its Online teacing portal'
+          },
+          params : {
+             location : "Bangolore",
+             size     : 100
+          }
+    }).subscribe((data) => {
       console.log('MY project having the data from local', data);
       this.productsData = data;
     });
@@ -112,16 +121,18 @@ export class AppComponent implements OnInit {
   }
 
   evtDeleteData(deviceDeleteID:HTMLInputElement){
-    let dID = deviceDeleteID.value;
+    let dID = deviceDeleteID.value;   //7
 
     this.httpClient
       .delete('http://localhost:3000/Products/' + dID).subscribe((response)=>{
                console.log(response);
                //HOme work //
+              //  Based on 7 you can delete the record  . slice() or splice() method
 
       })
 
   }
+
 
 
 
